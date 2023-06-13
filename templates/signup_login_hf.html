@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='main.css') }}" />
+
+    <title>Starbucks</title>
+  </head>
+  <body>
+    <div class="Signup_header">
+      <img
+        src="https://commoditytrading.guru/wp-content/uploads/2019/01/largest-coffee-traders-starbucks-logo.png"
+        alt=""
+        srcset=""
+      />
+    </div>
+    {%block body%} {%endblock%}
+    <div class="bottom_footer">
+      <h4>
+        *At participating stores. Some restrictions apply. See
+        starbucks.com/rewards
+      </h4>
+      <h4>
+        **For every Starbucks eGift in our Military Appreciation category sold
+        May 1–31, we’ll donate $5 to Blue Star Families and Operation Gratitude
+        to foster connection and improve the well-being of our military
+        community. Donations will be evenly divided between the two
+        organizations. Learn more at http://bluestarfam.org and
+        http://operationgratitude.com.
+      </h4>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks</title>
+  </head>
+  {% extends "header_footer.html" %} {% block body%}
+  <body>
+    <h3 style="text-align: center;margin: 50px 0px;font-size: 25px;font-weight: 600;"> Login an account</h3>
+    <div class="login_form_section">
+        <h4 style="margin-bottom: 35px;">* it Shows required field</h4>
+      <form action="/login" method="post">
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="*Useranme"
+          required
+          data-validation-required-message="Please enter your Name"
+        />
+        <br>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="*Passwrod"
+          required
+          data-validation-required-message="Please enter password"
+        />
+        <br><div class="signup_link" style="color: #05673c;font-weight: 600;margin: 15px 0px;">
+        <a href="/signup" >If You haven't accout...</a></div><br>
+        <div class="button" style="text-align: center;">
+        <button name="submit" id="submit">Signin</button>
+        </div>
+        
+        <h4>{{msg}}</h4>
+      </form>
+    </div>
+  </body>
+  {% endblock %}
+</html>

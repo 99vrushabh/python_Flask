@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='main.css') }}" />
+    
+    <title>Starbucks</title>
+
+</head>
+<body>
+    <h3 style="text-align: center;margin: 50px 0px;font-size: 25px;font-weight: 600;">Admin Please Enter Email</h3>
+    <div class="login_form_section">
+        <h4 style="margin-bottom: 35px;">* it Shows required field</h4>
+      <form action="/add_product_admin" method="post">
+        <input
+          type="password"
+          name="check_password"
+          id="check_password"
+          placeholder="*Password"
+          required
+          data-validation-required-message="Please enter Password"
+        />
+        {{errormsg}}
+        <br><div class="signup_link" style="color: #05673c;font-weight: 600;margin: 15px 0px;">
+        <div class="button" style="text-align: center;">
+        <button name="submit" id="submit">done</button>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+  
+</body>
+</html>
