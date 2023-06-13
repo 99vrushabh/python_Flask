@@ -2,7 +2,7 @@ import uuid
 from flask import Blueprint, jsonify, redirect, render_template, request, url_for
 from flask_login import current_user, login_required
 from database import db
-from common.models import Product, Signup
+from common.models import Product
 
 
 admin =Blueprint('admin',__name__,template_folder='templates',static_folder='static')
